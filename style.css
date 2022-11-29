@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(./Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Louis';
+    src: url(./Louis\ George\ Cafe.ttf);
+}
+.vh{
+    height: 100vh;
+    width: 100%;
+}
+.vh{
+    padding: 0rem 2rem;
+}
+.firstvh{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./budka-damdinsuren-xihqiK6rD9k-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.firstvh__img{
+    width: 80%;
+    height: auto;
+}
+.firstvh__content{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.firstvh__content h2{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Raleway';
+    margin: 2rem 0px 2rem 0px;
+}
+.firstvh__button{
+    border: none;
+    font-family: 'Raleway';
+    outline: none;
+    background-color: gray;
+    color: white;
+    font-size: 2.5rem;
+    width: fit-content;
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    border-radius: 3rem;
+}
+.container__logo{
+    width: 100%;
+}
+.firstvh__logo{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.secondvh{
+    background-image: linear-gradient(rgba(148, 67, 255, 0.9), rgba(148, 67, 255, 0.9)), url(./footer\ background-01.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.secondvh article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.secondvh h1{
+    color: #fec01d;
+    width: 100%;
+    font-size: 4rem;
+    font-family: 'Raleway';
+}
+.secondvh h2{
+    font-size: 3rem;
+    font-family: 'Raleway';
+    margin: 1rem 0rem;
+}
+.secondvh p{
+    font-size: 2.5rem;
+    font-family: 'Louis';
+    margin-bottom: 1rem;
+}
+.secondvh__img{
+    margin: 1rem;
+    width: 210px;
+    height: auto;
+}
