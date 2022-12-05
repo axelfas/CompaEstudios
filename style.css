@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-size: 8px;
+    color: var(--negro);
 }
 @font-face {
     font-family: 'Raleway';
@@ -12,6 +13,12 @@
     font-family: 'Louis';
     src: url(./Louis\ George\ Cafe.ttf);
 }
+:root {
+    --morado: #9553ff;
+    --anaranjado: #fec01d;
+    --blanco: #ffff;
+    --negro: #333333;
+  }
 .vh{
     height: 100vh;
     width: 100%;
@@ -41,7 +48,7 @@
 }
 .firstvh__content h2{
     font-size: 3rem;
-    color: white;
+    color: var(--blanco);
     font-family: 'Raleway';
     margin: 2rem 0px 2rem 0px;
 }
@@ -49,8 +56,8 @@
     border: none;
     font-family: 'Raleway';
     outline: none;
-    background-color: gray;
-    color: white;
+    background-color: var(--negro);
+    color: var(--blanco);
     font-size: 2.5rem;
     width: fit-content;
     padding: 1rem 3.5rem 1rem 3.5rem;
@@ -65,10 +72,10 @@
     height: auto;
 }
 .secondvh{
-    background-image: linear-gradient(rgba(148, 67, 255, 0.9), rgba(148, 67, 255, 0.9)), url(./footer\ background-01.png);
+    background-image: linear-gradient(rgba(148, 67, 255, 0.5), rgba(148, 67, 255, 0.5)), url(/background\ web_Mesa\ de\ trabajo\ 1.svg);
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--blanco);
 }
 .secondvh article{
     width: 100%;
@@ -79,7 +86,7 @@
     align-items: center;
 }
 .secondvh h1{
-    color: #fec01d;
+    color: var(--anaranjado);
     width: 100%;
     font-size: 4rem;
     font-family: 'Raleway';
@@ -88,11 +95,13 @@
     font-size: 3rem;
     font-family: 'Raleway';
     margin: 1rem 0rem;
+    color: white;
 }
 .secondvh p{
     font-size: 2.5rem;
     font-family: 'Louis';
     margin-bottom: 1rem;
+    color: white;
 }
 .secondvh__img{
     margin: 1rem;
@@ -104,6 +113,15 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/background\ figuras\ blanco.svg);
     background-size: cover;
     height: fit-content;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.thirdvh__title{
+    width: 100%;
+    font-size: 4rem;
+    font-family: 'Raleway';
+    text-align: center;
+    margin-top: 3rem;
 }
 .thirdvh article{
     width: 100%;
@@ -120,11 +138,12 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: fit-content;
+    min-height: fit-content;
     max-width: 400px;
     padding: 2.5rem 2rem;
     border-radius: 25px;
     box-shadow: 0px 9px 41px -22px rgba(0,0,0,0.75);
+    cursor: pointer;
 }
 .thirdvh article div h2{
     font-family: 'Raleway';
@@ -133,6 +152,78 @@
     padding: 0px 0px 1rem 0px;
 }
 .thirdvh article div p{
+    font-size: 3rem;
+    text-align: justify;
+    font-family: 'Louis';
+}
+.card__branding{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(/branding.jpg);
+    background-size: cover;
+}
+.card__socialmedia{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(/socialmedia.jpg);
+    background-size: cover;
+}
+.card__desarrolloweb{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(/coding.jpg);
+    background-size: cover;
+}
+.card__uxui{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), url(/uxui.jpg);
+    background-size: cover;
+}
+.thirdvh article div:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url(/socialmedia.jpg);
+}
+
+
+
+
+.fourvh{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.fourvh article{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 3rem 0rem;
+    width: 100%;
+    height: fit-content;
+    max-width: 1500px;
+}
+.fourvh article .opinion__container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-height: fit-content;
+    max-width: 400px;
+    padding: 2.5rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0px 9px 41px -22px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.fourvh article .opinion__container figure{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.fourvh article .opinion__container figure img{
+    width: 100%;
+    height: auto;
+}
+.fourvh article .text__container h3{
+    font-size: 3.5rem;
+    padding: 1rem 0px;
+    font-family: 'Raleway';
+}
+.fourvh article .text__container p{
     font-size: 3rem;
     text-align: justify;
     font-family: 'Louis';
