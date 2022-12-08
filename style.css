@@ -20,7 +20,8 @@
     --negro: #333333;
   }
 .vh{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 .vh{
@@ -30,28 +31,40 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./budka-damdinsuren-xihqiK6rD9k-unsplash\ \(1\).jpg);
     background-size: cover;
     background-position: center;
+    padding: 0px;
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
+}
+.content__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    max-width: 1900px;
+    margin: auto;
 }
 .firstvh__img{
     width: 80%;
     height: auto;
-    max-width: 900px;
+    max-width: 750px;
+    padding: 1rem;
 }
 .firstvh__content{
     height: fit-content;
     width: 100%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 .firstvh__content h2{
     font-size: 3rem;
     color: var(--blanco);
     font-family: 'Raleway';
     margin: 2rem 0px 2rem 0px;
+    padding: 1rem;
 }
 .firstvh__button{
     border: none;
@@ -66,25 +79,39 @@
 }
 .container__logo{
     width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .firstvh__logo{
     width: 100%;
     max-width: 300px;
-    height: auto;
+    height: auto
 }
 .secondvh{
-    background-image: linear-gradient(rgba(148, 67, 255, 0.5), rgba(148, 67, 255, 0.5)), url(/background\ web_Mesa\ de\ trabajo\ 1.svg);
+    background-image: linear-gradient(rgba(148, 67, 255, 0.6), rgba(148, 67, 255, 0.6)), url(/background\ web_Mesa\ de\ trabajo\ 1-01.svg);
     background-size: cover;
     background-position: center;
     color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .secondvh article{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    max-height: 100%;
+    height: fit-content;
+    justify-content: space-around;
     align-items: center;
+    max-width: 1600px;
+    gap: 4rem;
+}
+.secondvh article div{
+    max-width: 850px;
 }
 .secondvh h1{
     color: var(--anaranjado);
@@ -104,9 +131,12 @@
     margin-bottom: 1rem;
     color: white;
 }
+.secondvh figure{
+    width: fit-content;
+}
 .secondvh__img{
     margin: 1rem;
-    width: 210px;
+    width: 250px;
     height: auto;
 }
 .thirdvh{
@@ -141,7 +171,7 @@
     margin-right: auto;
     width: 100%;
     min-height: fit-content;
-    max-width: 400px;
+    max-width: 500px;
     padding: 2.5rem 2rem;
     border-radius: 25px;
     box-shadow: 0px 9px 41px -22px rgba(0,0,0,0.75);
@@ -196,7 +226,7 @@
     padding: 3rem 0rem;
     width: 100%;
     height: fit-content;
-    max-width: 1500px;
+    max-width: 1800px;
 }
 .fourvh article .opinion__container{
     background-color: rgba(255,255,255, .9);
@@ -204,11 +234,27 @@
     margin-right: auto;
     width: 100%;
     min-height: fit-content;
-    max-width: 400px;
+    max-width: 500px;
     padding: 2.5rem 2rem;
     border-radius: 25px;
     box-shadow: 0px 9px 41px -22px rgba(0,0,0,0.75);
     cursor: pointer;
+    background-position: center;
+}
+.iphoneluxury:hover{
+    background-image: url(/Tienda-1.png);
+}
+.technosolutions:hover{
+    background-image: url(/Techno-solutions-cards.png);
+}
+.jeastattoo:hover{
+    background-image: url(/Computadora\ y\ telefono\ JEAS.png);
+}
+.fourvh article .opinion__container:hover{
+    background-size: cover;
+}
+.fourvh article .opinion__container:hover figure , .fourvh article .opinion__container:hover p , .fourvh article .opinion__container:hover h3{
+    display: none;
 }
 .fourvh article .opinion__container figure{
     width: 40%;
@@ -233,4 +279,21 @@
 }
 .text__tattoo{
     font-size: 3rem;
+}
+@media only screen and (min-width : 992px){
+    *{
+        font-size: 12px;
+    }
+    /* .secondvh article div{
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    } */
+    .secondvh__img{
+        width: 600px;
+    }
+    .firstvh__content h2{
+        font-size: 4.5rem;
+    }
+    .content__container{
+        justify-content: space-between;}
 }
