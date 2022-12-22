@@ -99,12 +99,13 @@ html{
 .firstvh__img{
     width: 80%;
     height: auto;
+    margin: auto;
     max-width: 700px;
     padding: 1rem;
 }
 .firstvh__content{
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -271,6 +272,7 @@ html{
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     transition: 0.5s;
     border: 1px solid;
+    cursor: pointer;
 }
 .circle{
     display: flex;
